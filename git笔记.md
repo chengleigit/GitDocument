@@ -1,4 +1,4 @@
-git 命令
+## 常用命令
 
 cd 
 cd ..：返回上一级
@@ -34,7 +34,19 @@ git pull 拉去代码
 
 
 
-# git
+
+
+## 1、第一次提交
+
+- git inti 
+- git add .
+- git commit -m ""
+- git remote add origin  https://github.com/chengleigit/GitDocument.git
+- git push -u origin master
+
+
+
+## 2、分支
 
 - git branch	查看本地分支
 - git branch -r 查看远程分支
@@ -42,12 +54,11 @@ git pull 拉去代码
 - git branch [brnachName] 创建分支
 - git branch -d 删除分支
 - git push origin :newbranch  删除远程分支
-- git inti 初始本地仓库
-- git  remote add origin git@github.com:youname/仓库名.git
-- git add . 
-- git commit -m "" 提交代码
+- git merge [branchName] 合并分支
 
 
+
+## 99、其他
 
 删除已经提交的文件
 
@@ -61,8 +72,21 @@ git pull 拉去代码
 
 git remote set-url origin https://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@github.com/chengleigit/RoutineApi.git
 
- 
+
+
+移除远程仓库，重新添加 
+
+git remote rm origin 
+
+git remote add origin https://github.com/XXX
+
+
+
+git config --global http.sslVerify "false"
+
+
 
 合并分支
 
-合并分支：git merge
+合并分支：
+
